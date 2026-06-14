@@ -52,27 +52,3 @@ body::before {
     height: auto;
     margin-bottom: 20px;
 }
-
-.email {
-    display: flex;
-    align-items: center;
-    align-self: flex-start;
-    gap: 10px;
-}
-
-.email img {
-    width: 4%;
-    height: 4%;
-}
-
-.github_link {
-    display: flex;
-    align-items: center;
-    align-self: flex-start;
-    gap: 10px;
-}
-
-.github_link img {
-    width: 4%;
-    height: 4%;
-}
