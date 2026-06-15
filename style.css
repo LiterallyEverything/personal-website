@@ -7,8 +7,12 @@
 
 * {
     font-family: "cascadia_code";
-    color: #eec285;
     text-align: justify;
+}
+
+a {
+    text-decoration: none;
+    color: #eec285
 }
 
 body {
@@ -20,6 +24,7 @@ body {
     align-items: center;
 
     background-color: #463047;
+    color: #eec285;
 }
 
 body::before {
@@ -47,6 +52,16 @@ body::before {
     min-height: 100vh;
 }
 
+.nav {
+    display: flex;
+    gap: 15px;
+}
+
+.nav a:hover {
+    color: #463047;
+    background-color: #eec285;
+}
+
 .banner {
     width: 100%;
     height: auto;
@@ -54,25 +69,32 @@ body::before {
 }
 
 .email {
-    display: flex;
+    display: inline-flex;
     align-items: center;
-    align-self: flex-start;
     gap: 10px;
 }
 
 .email img {
-    width: 4%;
-    height: 4%;
+    width: 20px;
+    height: 13px;
 }
 
 .github_link {
-    display: flex;
+    display: inline-flex;
     align-items: center;
-    align-self: flex-start;
     gap: 10px;
 }
 
 .github_link img {
-    width: 4%;
-    height: 4%;
+    width: 20px;
+    height: 20px;
+}
+
+.github_link:hover {
+    color: #463047;
+    background-color: #eec285;
+}
+
+.github_link:hover img {
+    content: url("img/github_invert.png");
 }
