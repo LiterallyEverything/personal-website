@@ -1,31 +1,58 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <link rel="stylesheet" href="style.css">
-        <title>Home</title>
-    </head>
-    <body>
-        <div class="main">
-            <h2>muhammad mustafa adil khan</h2>
-            <div class="nav">
-                <a href="">[ home ]</a>
-                <a href="projects/">[ projects ]</a>
-                <a href="art_gallery/">[ art gallery ]</a>
-            </div>
-            <p>
-                Hi I'm Mustafa! A 16-year-old teen
-                from Pakistan working on cool projects!
-            </p>
-            <img src="img/xkcd_comic.png" class="banner">
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>homepage :3</title>
+</head>
 
-            <div class="email">
-                <img src="img/email.png">
-                <p>khanmustafa.24410@gmail.com</p>
-            </div>
-            <a class="github_link" href="https://github.com/LiterallyEverything">
-                <img src="img/github.png">
-                <span>LiterallyEverything</span>
-            </a>
+<body>
+    <div id="stars"></div>
+    <div class="left-side">
+        <div class="stamps">
+            <img src="stamps/endacopia.png" alt="endacopia">
+            <img src="stamps/scp_cb.png" alt="scp_cb">
+            <img src="stamps/nyan_cat.gif" alt="nyan_cat">
+            <img src="stamps/linkin_park.png" alt="linkin_park">
+            <img src="stamps/one_x.png" alt="one_x">
+            <img src="stamps/murder_drones.png" alt="murder_drones">
         </div>
-    </body>
+    </div>
+    <div class="right-side">
+        <div class="about-box">
+            <p>
+                Haiii! I'm Mustafa :3
+            </p>
+            <p>
+                Weclome to mai website! I do lots of kewl projects around programming, game dev,
+                and engineering.
+            </p>
+        </div>
+        <div class="projects-box">
+            <p>
+                Here are some of my projects that I've worked on X3
+            </p>
+            <h2><a href="">PseudoPro</a></h2>
+            <p>
+                An interpreter for pseudocode according to the A Level's computer science syllabus for CAIEs!
+            </p>
+        </div>
+    </div>
+</body>
 </html>
+
+<script>
+    const stars = document.getElementById("stars");
+    for (let i = 0; i < 150; i++) {
+        const star = document.createElement("div");
+        star.classList.add("star");
+        star.style.left = Math.random() * 100 + "vw";
+        star.style.top = Math.random() * 100 + "vh";
+        const size = Math.random() * 2 + 1;
+        star.style.width = size + "px";
+        star.style.height = size + "px";
+        star.style.opacity = Math.random() * 0.7 + 0.3;
+        stars.appendChild(star);
+    }
+</script>
