@@ -32,7 +32,6 @@
   <div class="hero-bg-glow"></div>
   <div class="hero-inner">
     <div>
-      <div class="hero-kicker">Student Project · Cambridge CS IDE</div>
       <h1>Write pseudocode<br/>the <span class="c">Cambridge</span><br/>way</h1>
       <p class="hero-desc">
         Pseudo Pro is a <strong>desktop IDE built for Cambridge O and A Level Computer Science students</strong>. Proper syntax highlighting, live execution with interactive input, multi-tab file management — everything you need to practise, nothing you don't.
@@ -43,40 +42,9 @@
       </div>
     </div>
 
-    <!-- Hero IDE mockup -->
+    <!-- Hero screenshot -->
     <div class="hero-ide">
-      <div class="ide-bar">
-        <span class="d d-r"></span><span class="d d-y"></span><span class="d d-g"></span>
-        <div class="ide-tabs">
-          <div class="ide-tab active">grades.pseudo</div>
-          <div class="ide-tab">sort.pseudo</div>
-        </div>
-      </div>
-      <div class="ide-body">
-        <div class="ide-gutter">1<br/>2<br/>3<br/>4<br/>5<br/>6<br/>7<br/>8<br/>9<br/>10<br/>11<br/>12<br/>13<br/>14</div>
-        <div class="ide-code">
-          <span class="cm">// Cambridge A Level — Grade Checker</span><br/>
-          <span class="k">DECLARE</span> <span class="v">score</span> : <span class="k">INTEGER</span><br/>
-          <span class="k">DECLARE</span> <span class="v">grade</span> : <span class="k">STRING</span><br/>
-          <br/>
-          <span class="f">OUTPUT</span> <span class="s">"Enter your score: "</span><br/>
-          <span class="f">INPUT</span> <span class="v">score</span><br/>
-          <br/>
-          <span class="k">IF</span> <span class="v">score</span> &gt;= <span class="n">70</span> <span class="k">THEN</span><br/>
-          &nbsp;&nbsp;&nbsp;<span class="v">grade</span> ← <span class="s">"A"</span><br/>
-          <span class="k">ELSEIF</span> <span class="v">score</span> &gt;= <span class="n">60</span> <span class="k">THEN</span><br/>
-          &nbsp;&nbsp;&nbsp;<span class="v">grade</span> ← <span class="s">"B"</span><br/>
-          <span class="k">ELSE</span><br/>
-          &nbsp;&nbsp;&nbsp;<span class="v">grade</span> ← <span class="s">"C"</span><br/>
-          <span class="k">ENDIF</span><br/>
-          <span class="f">OUTPUT</span> <span class="v">grade</span><span class="cur"></span>
-        </div>
-      </div>
-      <div class="ide-status">
-        <span class="ok">● Ready</span>
-        <span>pseudocode · Ln 14, Col 16</span>
-        <span>PSEUDO PRO</span>
-      </div>
+      <img src="ss1.png" alt="Pseudo Pro IDE screenshot" style="width:100%;display:block;border-radius:var(--r-lg);"/>
     </div>
   </div>
 </section>
@@ -86,15 +54,12 @@
      ════════════════════════════════════ -->
 <div class="pill-bar">
   <div class="pill-row">
-    <div class="pill"><span class="icon">🎨</span> Monaco Editor</div>
     <div class="pill"><span class="icon">✨</span> Syntax Highlighting</div>
     <div class="pill"><span class="icon">💡</span> Pseudocode Autocomplete</div>
     <div class="pill"><span class="icon">▶️</span> Live Execution</div>
     <div class="pill"><span class="icon">💬</span> Interactive INPUT</div>
-    <div class="pill"><span class="icon">🗂️</span> Multi-Tab Editing</div>
-    <div class="pill"><span class="icon">💾</span> Save &amp; Save As</div>
-    <div class="pill"><span class="icon">🔍</span> Find Panel</div>
-    <div class="pill"><span class="icon">↩️</span> Undo / Redo</div>
+    <div class="pill"><span class="icon">📄</span> Multi-Tab Editing</div>
+    <div class="pill"><span class="icon">📁</span> File Management</div>
     <div class="pill"><span class="icon">⚠️</span> Error Reporting</div>
     <div class="pill"><span class="icon">🌙</span> Dark Theme</div>
     <div class="pill"><span class="icon">⌨️</span> Keyboard Shortcuts</div>
@@ -108,7 +73,7 @@
   <div class="showcase-inner">
     <div class="center">
       <div class="sec-label">// Feature Showcase</div>
-      <h2 class="sec-title">A real IDE. <span class="hl">For pseudocode.</span></h2>
+      <h2 class="sec-title">A real IDE <span class="hl">for pseudocode</span></h2>
       <p class="sec-desc">Click through each feature to see exactly what Pseudo Pro can do.</p>
     </div>
 
@@ -116,7 +81,6 @@
       <button class="stab active" onclick="showPanel('editor', this)">Editor</button>
       <button class="stab"        onclick="showPanel('terminal', this)">Terminal</button>
       <button class="stab"        onclick="showPanel('files', this)">File Management</button>
-      <button class="stab"        onclick="showPanel('shortcuts', this)">Shortcuts</button>
     </div>
 
     <div class="showcase-panels">
@@ -124,36 +88,17 @@
       <!-- ── EDITOR ── -->
       <div class="spanel active" id="panel-editor">
         <div class="spanel-text">
-          <h3>Monaco Editor — the VS Code engine</h3>
-          <p>Pseudo Pro is built on Monaco, the same editor that powers VS Code. That means a professional editing experience right out of the box, with a custom Cambridge pseudocode language layer on top.</p>
+          <h3>VS Code like IDE</h3>
+          <p>Pseudo Pro is built on the same engine that powers VS Code. That means a professional editing experience right out of the box, with a custom Cambridge pseudocode language layer on top.</p>
           <ul class="spanel-list">
-            <li>Custom syntax highlighting for every Cambridge keyword — <span style="color:#B69EFF;font-family:'Fira Code',monospace;font-size:0.85em">DECLARE</span>, <span style="color:#B69EFF;font-family:'Fira Code',monospace;font-size:0.85em">IF</span>, <span style="color:#B69EFF;font-family:'Fira Code',monospace;font-size:0.85em">FOR</span>, <span style="color:#B69EFF;font-family:'Fira Code',monospace;font-size:0.85em">WHILE</span>, <span style="color:#B69EFF;font-family:'Fira Code',monospace;font-size:0.85em">PROCEDURE</span> and more</li>
+            <li>Custom syntax highlighting for every Cambridge keyword</li>
             <li>Strings, numbers, variables and comments each get their own distinct colour</li>
             <li>Pseudocode autocomplete — start typing any keyword and accept suggestions instantly</li>
             <li>Dark theme designed for long study sessions, with line numbers and smooth cursor</li>
           </ul>
         </div>
         <div class="spanel-visual">
-          <div class="mini-bar">
-            <div class="md md-r"></div><div class="md md-y"></div><div class="md md-g"></div>
-            <div class="mini-label">search.pseudo</div>
-          </div>
-          <div class="mini-body">
-            <div class="mini-gutter">1<br/>2<br/>3<br/>4<br/>5<br/>6<br/>7<br/>8<br/>9<br/>10<br/>11</div>
-            <div class="mini-code">
-              <span class="cm">// Binary Search</span><br/>
-              <span class="k">DECLARE</span> <span class="v">arr</span> : <span class="k">ARRAY</span>[<span class="n">1</span>:<span class="n">10</span>] <span class="k">OF INTEGER</span><br/>
-              <span class="k">DECLARE</span> <span class="v">lo</span>, <span class="v">hi</span>, <span class="v">mid</span> : <span class="k">INTEGER</span><br/>
-              <span class="v">lo</span> ← <span class="n">1</span> &nbsp; <span class="v">hi</span> ← <span class="n">10</span><br/>
-              <span class="k">WHILE</span> <span class="v">lo</span> &lt;= <span class="v">hi</span> <span class="k">DO</span><br/>
-              &nbsp;&nbsp;<span class="v">mid</span> ← (<span class="v">lo</span> + <span class="v">hi</span>) <span class="k">DIV</span> <span class="n">2</span><br/>
-              &nbsp;&nbsp;<span class="k">IF</span> <span class="v">arr</span>[<span class="v">mid</span>] = <span class="v">target</span> <span class="k">THEN</span><br/>
-              &nbsp;&nbsp;&nbsp;&nbsp;<span class="f">OUTPUT</span> <span class="s">"Found at "</span>, <span class="v">mid</span><br/>
-              &nbsp;&nbsp;<span class="k">ENDIF</span><br/>
-              <span class="k">ENDWHILE</span><br/>
-              <span class="cur"></span>
-            </div>
-          </div>
+          <img src="ss2.png" alt="Pseudo Pro editor screenshot" style="width:100%;display:block;border-radius:var(--r-lg);"/>
         </div>
       </div>
 
@@ -170,25 +115,7 @@
           </ul>
         </div>
         <div class="spanel-visual">
-          <div class="mini-bar">
-            <div class="md md-r"></div><div class="md md-y"></div><div class="md md-g"></div>
-            <div class="mini-label">Terminal</div>
-          </div>
-          <div class="mini-term">
-            <div class="t-dim">PSEUDO PRO › Running grades.pseudo...</div>
-            <br/>
-            <div class="t-out">Enter your name:</div>
-            <div class="t-in">&gt; Ali</div>
-            <br/>
-            <div class="t-out">Enter your score:</div>
-            <div class="t-in">&gt; 74</div>
-            <br/>
-            <div class="t-out">Hello, Ali!</div>
-            <div class="t-out">Your grade is: <span style="color:var(--lime)">A</span></div>
-            <div class="t-out">Well done — you passed.</div>
-            <br/>
-            <div class="t-dim">Process finished with exit code 0</div>
-          </div>
+          <img src="ss3.png" alt="Pseudo Pro terminal screenshot" style="width:100%;display:block;border-radius:var(--r-lg);"/>
         </div>
       </div>
 
@@ -199,69 +126,17 @@
           <p>Work on multiple pseudocode files at once. Tabs show which files have unsaved changes, and closing a file warns you before anything is lost. A dedicated workspace folder keeps your saved files organised.</p>
           <ul class="spanel-list">
             <li>Multiple open tabs — switch between files without losing your place</li>
-            <li>Modified-file indicator (●) on any tab with unsaved changes</li>
+            <li>Modified-file indicator (*) on any tab with unsaved changes</li>
             <li>Unsaved-change warning when you close or quit</li>
             <li>New, Open, Save, Save As, and Close — all available</li>
-            <li>Supports <code style="font-family:'Fira Code',monospace;font-size:0.85em;color:var(--lime)">.pseudo</code> and <code style="font-family:'Fira Code',monospace;font-size:0.85em;color:var(--lime)">.txt</code> files, with duplicate filename prevention</li>
+            <li>Supports <code style="font-family:'Fira Code',monospace;font-size:0.85em;color:var(--lime)">.pseudo</code> and <code style="font-family:'Fira Code',monospace;font-size:0.85em;color:var(--lime)">.txt</code> files</li>
             <li>Dedicated <code style="font-family:'Fira Code',monospace;font-size:0.85em;color:var(--lime)">saved/</code> workspace folder keeps everything in one place</li>
           </ul>
         </div>
         <div class="spanel-visual">
-          <div class="mini-bar">
-            <div class="md md-r"></div><div class="md md-y"></div><div class="md md-g"></div>
-            <div class="mini-label">File Manager</div>
-          </div>
-          <div style="padding:14px;">
-            <div class="mf-tabs">
-              <div class="mf-tab mf-active">grades.pseudo</div>
-              <div class="mf-tab mf-dirty">sort.pseudo</div>
-              <div class="mf-tab">search.pseudo</div>
-            </div>
-            <div class="mf-body">
-              <span class="cm">// grades.pseudo — saved</span><br/>
-              <span class="k">DECLARE</span> <span class="v">score</span> : <span class="k">INTEGER</span><br/>
-              <span class="f">INPUT</span> <span class="v">score</span><br/>
-              <span class="k">IF</span> <span class="v">score</span> &gt;= <span class="n">70</span> <span class="k">THEN</span><br/>
-              &nbsp;&nbsp;<span class="f">OUTPUT</span> <span class="s">"Pass"</span><br/>
-              <span class="k">ENDIF</span>
-            </div>
-            <div style="margin-top:10px;font-family:'Fira Code',monospace;font-size:0.68rem;color:var(--yellow);">
-              ● sort.pseudo has unsaved changes
-            </div>
-          </div>
+          <img src="ss4.png" alt="Pseudo Pro file management screenshot" style="width:100%;display:block;border-radius:var(--r-lg);"/>
         </div>
       </div>
-
-      <!-- ── SHORTCUTS ── -->
-      <div class="spanel" id="panel-shortcuts">
-        <div class="spanel-text">
-          <h3>Keyboard shortcuts &amp; editing tools</h3>
-          <p>Pseudo Pro works the way you expect a desktop app to work. Every common action has a keyboard shortcut, and the editor handles all the standard editing operations you rely on.</p>
-          <ul class="spanel-list">
-            <li>Run your program without touching the mouse</li>
-            <li>Save, open, and create files with standard shortcuts</li>
-            <li>Find text anywhere in your file instantly</li>
-            <li>Full undo/redo history — never lose a change</li>
-            <li>Cut, copy, and paste work exactly as expected</li>
-          </ul>
-        </div>
-        <div class="spanel-visual">
-          <div class="mini-bar">
-            <div class="md md-r"></div><div class="md md-y"></div><div class="md md-g"></div>
-            <div class="mini-label">Keyboard Shortcuts</div>
-          </div>
-          <div>
-            <div class="shortcut-row"><span>Run program</span><span class="kbd">F5</span></div>
-            <div class="shortcut-row"><span>Save</span><span class="kbd">Ctrl + S</span></div>
-            <div class="shortcut-row"><span>New file</span><span class="kbd">Ctrl + N</span></div>
-            <div class="shortcut-row"><span>Open file</span><span class="kbd">Ctrl + O</span></div>
-            <div class="shortcut-row"><span>Find</span><span class="kbd">Ctrl + F</span></div>
-            <div class="shortcut-row"><span>Undo</span><span class="kbd">Ctrl + Z</span></div>
-            <div class="shortcut-row"><span>Copy / Paste / Cut</span><span class="kbd">Ctrl + C / V / X</span></div>
-          </div>
-        </div>
-      </div>
-
     </div><!-- end showcase-panels -->
   </div>
 </section>
@@ -271,12 +146,12 @@
      ════════════════════════════════════ -->
 <section class="video-section" id="video">
   <div class="center">
-    <div class="sec-label">// Watch It Work</div>
-    <h2 class="sec-title">See Pseudo Pro <span class="hl">in action</span></h2>
+    <div class="sec-label">// Watch it Work</div>
+    <h2 class="sec-title">What is <span class="hl">Pseudo Pro?</span></h2>
   </div>
   <div class="video-wrap">
     <iframe
-      src="https://www.youtube-nocookie.com/embed/OkjpWSshBjw"
+      src="https://www.youtube-nocookie.com/embed/2VZ0sAoZMiY"
       title="Pseudo Pro Showcase"
       allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
       allowfullscreen>
@@ -291,22 +166,19 @@
   <div class="center">
     <div class="sec-label">// Complete Feature List</div>
     <h2 class="sec-title">Everything that's <span class="hl">in the IDE</span></h2>
-    <p class="sec-desc">Every feature implemented and working in the current version of Pseudo Pro.</p>
+    <p class="sec-desc">Every feature implemented in the current version of Pseudo Pro.</p>
   </div>
   <div class="check-grid">
 
     <div class="check-col">
       <div class="check-col-head">Editor</div>
       <ul class="cklist">
-        <li><span class="ck">✅</span>Monaco Editor integration</li>
         <li><span class="ck">✅</span>Custom pseudocode syntax highlighting</li>
         <li><span class="ck">✅</span>Pseudocode autocomplete</li>
-        <li><span class="ck">✅</span>Dark theme</li>
+        <li><span class="ck">✅</span>Dark and Light theme</li>
         <li><span class="ck">✅</span>Multiple tabs</li>
         <li><span class="ck">✅</span>Modified-file indicators</li>
         <li><span class="ck">✅</span>Unsaved-change warnings</li>
-        <li><span class="ck">✅</span>Find panel</li>
-        <li><span class="ck">✅</span>Undo / Redo</li>
         <li><span class="ck">✅</span>Clipboard operations</li>
         <li><span class="ck">✅</span>Keyboard shortcuts</li>
       </ul>
@@ -315,17 +187,9 @@
     <div class="check-col">
       <div class="check-col-head">File Management</div>
       <ul class="cklist">
-        <li><span class="ck">✅</span><code>.pseudo</code> file support</li>
-        <li><span class="ck">✅</span><code>.txt</code> file support</li>
-        <li><span class="ck">✅</span>New file</li>
-        <li><span class="ck">✅</span>Open file</li>
-        <li><span class="ck">✅</span>Save</li>
-        <li><span class="ck">✅</span>Save As</li>
-        <li><span class="ck">✅</span>Close file</li>
-        <li><span class="ck">✅</span>Duplicate filename prevention</li>
-        <li><span class="ck">✅</span><code>saved/</code> workspace folder</li>
-        <li><span class="ck">✅</span>File-open tracking</li>
-        <li><span class="ck">✅</span>File deletion on close</li>
+        <li><span class="ck">✅</span><code>.pseudo</code> and <code>.txt</code> file support</li>
+        <li><span class="ck">✅</span>File management</li>
+        <li><span class="ck">✅</span>Dedicated <code>saved/</code> workspace folder</li>
       </ul>
     </div>
 
@@ -333,7 +197,6 @@
       <div class="check-col-head">Execution</div>
       <ul class="cklist">
         <li><span class="ck">✅</span>Pseudocode interpreter</li>
-        <li><span class="ck">✅</span>Pseudocode execution</li>
         <li><span class="ck">✅</span>Terminal output</li>
         <li><span class="ck">✅</span>Interactive <code>INPUT</code></li>
         <li><span class="ck">✅</span>Interpreter runs in a thread</li>
